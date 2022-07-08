@@ -1,4 +1,5 @@
-require('colorizer').setup(
+local preq = require('utils').preq
+preq('colorizer').setup(
 {'*';},
 {
   RGB      = true;         -- #RGB hex codes

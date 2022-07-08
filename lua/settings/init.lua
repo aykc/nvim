@@ -1,28 +1,35 @@
-vim.o.splitright = true
-vim.o.splitbelow = true
-vim.o.number = true
-vim.o.autoindent = true
-vim.o.expandtab = true
-vim.o.tabstop = 2
-vim.o.shiftwidth = vim.o.tabstop
-vim.o.scrolloff = 5
-vim.o.clipboard = 'unnamedplus'
-vim.o.hidden = true
-vim.o.guifont = 'JetBrainsMono, Nerd, Font, 11'
-vim.o.encoding = 'UTF-8'
-vim.o.listchars = 'tab:▸ ,trail:·,precedes:←,extends:→,eol:↲,nbsp:␣'
-vim.o.mouse = 'a'
-vim.o.undolevels = 1000
-vim.o.showmatch = true
-vim.o.ignorecase = true
-vim.o.hlsearch = false
-vim.o.smartcase = true
-vim.o.completeopt = 'menu,menuone,noselect'
-vim.o.showmode = true
-vim.o.cursorline = true
+local options = {
+  splitright = true,
+  splitbelow = true,
+  number = true,
+  autoindent = true,
+  expandtab = true,
+  tabstop = 2,
+  shiftwidth = 2,
+  tabstop = 2,
+  scrolloff = 5,
+  termguicolors = true,
+  clipboard = 'unnamedplus',
+  hidden = true,
+  guifont = 'JetBrainsMono, Nerd, Font, 11',
+  encoding = 'UTF-8',
+  listchars = 'tab:▸ ,trail:·,precedes:←,extends:→,eol:↲,nbsp:␣,space:⋅',
+  mouse = 'a',
+  undofile = true,
+  undolevels = 1000,
+  updatetime = 100,
+  showmatch = true,
+  ignorecase = true,
+  hlsearch = false,
+  smartcase = true,
+  completeopt = 'menu,menuone,noselect',
+  showmode = false,
+  cursorline = true,
+  signcolumn = "yes",
+  -- set shada options
+  shada = [[!,'1000,s100,<500,f1,:100,@1000,/50,%50,h]],
+}
 
--- set leader key to <space>
-vim.g.mapleader = ' '
-
--- set shada options
-vim.o.shada = [[!,'1000,s100,<500,f1,:100,@1000,/50,%50,h]]
+for k, v in pairs(options) do
+  vim.o[k] = v
+end
