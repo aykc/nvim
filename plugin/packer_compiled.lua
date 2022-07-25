@@ -219,10 +219,46 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-colorizer.lua
+time([[Config for nvim-colorizer.lua]], true)
+preq('plugins.colorizer')
+time([[Config for nvim-colorizer.lua]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+preq('plugins.comment')
+time([[Config for Comment.nvim]], false)
+-- Config for: indent-blankline.nvim
+time([[Config for indent-blankline.nvim]], true)
+preq('plugins.indent-blankline')
+time([[Config for indent-blankline.nvim]], false)
 -- Config for: lualine.nvim
 time([[Config for lualine.nvim]], true)
 preq('plugins.lualine')
 time([[Config for lualine.nvim]], false)
+-- Config for: telescope.nvim
+time([[Config for telescope.nvim]], true)
+preq('plugins.telescope')
+time([[Config for telescope.nvim]], false)
+-- Config for: which-key.nvim
+time([[Config for which-key.nvim]], true)
+preq('plugins.which-key')
+time([[Config for which-key.nvim]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+preq('plugins.autopairs')
+time([[Config for nvim-autopairs]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+preq('plugins.toggleterm')
+time([[Config for toggleterm.nvim]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+preq('plugins.nvim-tree')
+time([[Config for nvim-tree.lua]], false)
+-- Config for: nvim-cmp
+time([[Config for nvim-cmp]], true)
+preq('plugins.cmp')
+time([[Config for nvim-cmp]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
 preq('plugins.gitsigns')
@@ -231,42 +267,6 @@ time([[Config for gitsigns.nvim]], false)
 time([[Config for cmp-nvim-lsp]], true)
 preq('plugins.lsp')
 time([[Config for cmp-nvim-lsp]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-preq('plugins.autopairs')
-time([[Config for nvim-autopairs]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-preq('plugins.nvim-tree')
-time([[Config for nvim-tree.lua]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-preq('plugins.comment')
-time([[Config for Comment.nvim]], false)
--- Config for: nvim-colorizer.lua
-time([[Config for nvim-colorizer.lua]], true)
-preq('plugins.colorizer')
-time([[Config for nvim-colorizer.lua]], false)
--- Config for: nvim-cmp
-time([[Config for nvim-cmp]], true)
-preq('plugins.cmp')
-time([[Config for nvim-cmp]], false)
--- Config for: indent-blankline.nvim
-time([[Config for indent-blankline.nvim]], true)
-preq('plugins.indent-blankline')
-time([[Config for indent-blankline.nvim]], false)
--- Config for: which-key.nvim
-time([[Config for which-key.nvim]], true)
-preq('plugins.which-key')
-time([[Config for which-key.nvim]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
-preq('plugins.telescope')
-time([[Config for telescope.nvim]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-preq('plugins.toggleterm')
-time([[Config for toggleterm.nvim]], false)
 if should_profile then save_profiles() end
 
 end)

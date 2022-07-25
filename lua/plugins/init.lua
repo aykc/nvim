@@ -81,7 +81,7 @@ return packer.startup(function(use)
 
   -- Terminal
   use {
-    'akinsho/toggleterm.nvim', tag = 'v1.*',
+    'akinsho/toggleterm.nvim', tag = 'v2.*', branch = 'main',
     config = "preq('plugins.toggleterm')"
   }
 
