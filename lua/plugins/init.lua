@@ -120,6 +120,13 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
+  -- Treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+    config = "preq('plugins.treesitter')"
+  }
+
   -- Autopairs
   use {
     'windwp/nvim-autopairs',
