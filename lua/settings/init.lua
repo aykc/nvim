@@ -6,7 +6,6 @@ local options = {
   expandtab = true,
   tabstop = 2,
   shiftwidth = 2,
-  tabstop = 2,
   scrolloff = 5,
   termguicolors = true,
   clipboard = 'unnamedplus',
@@ -26,6 +25,9 @@ local options = {
   showmode = false,
   cursorline = true,
   signcolumn = "yes",
+  foldlevel = 20,
+  foldmethod = "expr",
+  foldexpr = "nvim_treesitter#foldexpr()",
   -- set shada options
   shada = [[!,'1000,s100,<500,f1,:100,@1000,/50,%50,h]],
 }
